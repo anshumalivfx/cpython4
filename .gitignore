@@ -45,7 +45,7 @@ gmon.out
 # Ignore core dumps... but not Tools/msi/core/ or the like.
 core
 !core/
-
+build/*
 
 #####
 # Then, rules meant for a specific location relative to the repo root.

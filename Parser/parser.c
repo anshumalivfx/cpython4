@@ -48,6 +48,7 @@ static KeywordToken *reserved_keywords[] = {
         {"yield", 573},
         {"break", 508},
         {"class", 653},
+        {"enum", 654},
         {"while", 646},
         {"False", 602},
         {NULL, -1},
@@ -4331,7 +4332,6 @@ class_def_raw_rule(Parser *p)
     p->level--;
     return _res;
 }
-
 // function_def: decorators function_def_raw | function_def_raw
 static stmt_ty
 function_def_rule(Parser *p)

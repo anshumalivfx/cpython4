@@ -580,8 +580,8 @@ MAKEFLAGS=
 # Identity of this package.
 PACKAGE_NAME='python'
 PACKAGE_TARNAME='python'
-PACKAGE_VERSION='3.12'
-PACKAGE_STRING='python 3.12'
+PACKAGE_VERSION='4.0'
+PACKAGE_STRING='python 4.0'
 PACKAGE_BUGREPORT='https://github.com/python/cpython/issues/'
 PACKAGE_URL=''
 
@@ -3431,7 +3431,7 @@ rm confdefs.h
 mv confdefs.h.new confdefs.h
 
 
-VERSION=3.12
+VERSION=4.0
 
 # Version number of Python's own shared library file.
 

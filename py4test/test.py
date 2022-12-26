@@ -3,7 +3,7 @@ struct StructName:
     b = float
     c = str
     d = bool
-    init(a, b, c, d):
+    __init__(a, b, c, d):
         self.a = a
         self.b = b
         self.c = c

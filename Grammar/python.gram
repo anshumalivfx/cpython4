@@ -243,6 +243,21 @@ block[asdl_stmt_seq*] (memo):
 
 decorators[asdl_expr_seq*]: a[asdl_expr_seq*]=('@' f=named_expression NEWLINE { f })+ { a }
 
+# enum Definition
+# ---------------
+
+enum_def[stmt_ty]:
+    | a=decorators b=enum_def_raw { _PyPegen_enum_def_decorators(p, a, b) }
+    | enum_def_raw
+
+enum_def_raw[stmt_ty]:
+    | invalid_enum_def_raw
+    | 'enum' a=NAME {
+        
+    }
+    
+
+
 # Class definitions
 # -----------------
 
